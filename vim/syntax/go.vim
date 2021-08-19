@@ -3,6 +3,6 @@
 syn keyword goDeclarationOverwrite var const type 
 syn match goBraces       "[{}\[\]]"
 syn match goParens       "[()]"
-syn match goOpSymbols    "=\{1,2}\|:=\|!=\|<\|>\|>=\|<=\|++\|+=\|--\|-="
+syn match goOpSymbols    ":=\|>=\|<=\|++\|+=\|--\|-=\|!=\|->\|<-\|=\{1,2\}\|<\|>\|!\|-\|+\|\~\|@\|#\|$\|%\|^\|*\|"
 syn match goEndColons    "[,]"
-syn match goLogicSymbols "\(&&\)\|\(||\)\|\(!\)"
+syn match goLogicSymbols "\(&&\)\|\(||\)\|\(&\)\|\(|\)"

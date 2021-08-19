@@ -160,7 +160,7 @@ call s:hi('Conceal',      {})
 call s:hi('Cursor',       { 'fg': s:black, 'bg': s:blue })
 call s:hi('CursorIM',     {})
 call s:hi('CursorColumn', {})
-call s:hi('CursorLine',   { 'styles': [s:styles.underline] })
+call s:hi('CursorLine',   { 'bg': s:cursor_grey, 'styles': [s:styles.bold] })
 call s:hi('Directory',    { 'fg': s:blue })
 call s:hi('DiffAdd',      { 'fg': s:black, 'bg': s:green })
 call s:hi('DiffChange',   { 'fg': s:black, 'bg': s:yellow })
@@ -510,7 +510,7 @@ function! s:overwrite_c_highlight()
     call s:hi('cParens',               { 'fg': s:pink })
     call s:hi('cOpSymbols',            { 'fg': s:pink })
     call s:hi('cEndColons',            { 'fg': s:pink })
-    call s:hi('cLogicSymbols',         { 'fg': s:blue })
+    call s:hi('cLogicSymbols',         { 'fg': s:salmon })
 endfunction
 
 augroup purify_c
