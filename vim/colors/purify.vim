@@ -57,7 +57,7 @@ if !exists('g:purify_bold')
 endif
 
 if !exists('g:purify_italic')
-  let g:purify_italic = 1
+  let g:purify_italic = 0
 endif
 
 if !exists('g:purify_underline')
@@ -106,7 +106,8 @@ endfunction
 
 " Syntax Groups (:h w18) {{{
 
-call s:hi('Comment',        { 'fg': s:comment_grey, 'styles': [s:styles.italic] })
+"call s:hi('Comment',        { 'fg': s:comment_grey, 'styles': [s:styles.italic] })
+call s:hi('Comment',        { 'fg': s:comment_grey, 'styles': ['italic'] })
 
 call s:hi('Constant',       { 'fg': s:yellow })
 call s:hi('String',         { 'fg': s:yellow })
@@ -142,7 +143,7 @@ call s:hi('Special',        { 'fg': s:yellow })
 call s:hi('SpecialChar',	{ 'fg': s:salmon, 'styles': [s:styles.underline] })
 call s:hi('Tag',	        { 'fg': s:yellow, 'styles': [s:styles.underline] })
 call s:hi('Delimiter',	    { 'fg': s:pink })
-call s:hi('SpecialComment',	{ 'fg': s:salmon, 'styles': [s:styles.underline] })
+call s:hi('SpecialComment',	{ 'fg': s:salmon, 'styles': [s:styles.underline, 'italic'] })
 call s:hi('Debug',	        { 'fg': s:yellow })
 
 
