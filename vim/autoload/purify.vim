@@ -58,6 +58,8 @@ let s:colors = {
     \ 'menu_grey':      get(s:override_colors, 'menu_grey',      { 'gui': '#3E4452', 'cterm': '237' }),
     \ 'visual_grey':    get(s:override_colors, 'visual_grey',    { 'gui': '#3E4452', 'cterm': '237' }),
     \ 'visual_black':   get(s:override_colors, 'visual_black',   { 'gui': 'NONE', 'cterm': 'NONE' }),
+    \ 'code_dark':      get(s:override_colors, 'code_dark',      { 'gui': '#EEEEEE', 'cterm': '188' }),
+    \ 'cd_search':      get(s:override_colors, 'cd_search',      { 'gui': '#264F78', 'cterm': '24' }),
     \ 'none':           get(s:override_colors, 'none',           { 'gui': 'NONE', 'cterm': 'NONE' })
 \ }
 

@@ -37,6 +37,8 @@ let s:pink = s:colors.pink
 let s:salmon = s:colors.salmon
 let s:purple = s:colors.purple
 let s:dark_yellow = s:colors.dark_yellow
+let s:code_dark = s:colors.code_dark
+let s:cd_search = s:colors.cd_search
 
 " Other colors
 let s:comment_grey = s:colors.comment_grey
@@ -179,13 +181,15 @@ call s:hi('MatchParen',   { 'fg': s:blue, 'styles': [s:styles.underline] })
 call s:hi('ModeMsg',      {})
 call s:hi('MoreMsg',      {})
 call s:hi('NonText',      { 'fg': s:blur_grey })
-call s:hi('Normal',       {})
+"call s:hi('Normal',       {})
+call s:hi('Normal',       { 'fg': s:code_dark })
 call s:hi('Pmenu',        { 'bg': s:menu_grey })
 call s:hi('PmenuSel',     { 'fg': s:black, 'bg': s:blue })
 call s:hi('PmenuSbar',    { 'bg': s:blur_grey })
 call s:hi('PmenuThumb',   { 'bg': s:pink })
 call s:hi('Question',     { 'fg': s:pink })
-call s:hi('Search',       { 'fg': s:blur_grey, 'bg': s:yellow })
+"call s:hi('Search',       { 'fg': s:blur_grey, 'bg': s:yellow })
+call s:hi('Search',       { 'fg': s:white, 'bg': s:cd_search })
 call s:hi('QuickFixLine', { 'fg': s:blur_grey, 'bg': s:blue })
 call s:hi('SpecialKey',   { 'fg': s:blur_grey })
 call s:hi('SpellBad',     { 'fg': s:salmon, 'styles': [s:styles.underline] })
