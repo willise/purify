@@ -152,7 +152,8 @@ call s:hi('Debug',	        { 'fg': s:yellow })
 call s:hi('Underlined',	    { 'fg': s:blue })
 call s:hi('Ignore',	        {})
 call s:hi('Error',	        { 'fg': s:white, 'bg': s:red })
-call s:hi('Todo',	        { 'fg': s:black, 'bg': s:yellow })
+"call s:hi('Todo',	        { 'fg': s:black, 'bg': s:yellow })
+call s:hi('Todo',	        { 'fg': s:green, 'bg': s:black })
 
 " }}}
 
