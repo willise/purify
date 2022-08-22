@@ -38,6 +38,7 @@ let s:salmon = s:colors.salmon
 let s:purple = s:colors.purple
 let s:dark_yellow = s:colors.dark_yellow
 let s:code_dark = s:colors.code_dark
+let s:cd_yellow = s:colors.cd_yellow
 let s:cd_search = s:colors.cd_search
 
 " Other colors
@@ -119,7 +120,7 @@ call s:hi('Boolean',        { 'fg': s:salmon })
 call s:hi('Float',          { 'fg': s:salmon })
 
 call s:hi('Identifier',     { 'fg': s:blue, 'styles': [s:styles.italic] })
-call s:hi('Function',       { 'fg': s:blue })
+call s:hi('Function',       { 'fg': s:cd_yellow })
 
 call s:hi('Statement',      { 'fg': s:pink, 'styles': [s:styles.italic] })
 call s:hi('Conditional',    { 'fg': s:pink, 'styles': [s:styles.italic] })
@@ -146,7 +147,7 @@ call s:hi('SpecialChar',	{ 'fg': s:salmon, 'styles': [s:styles.underline] })
 call s:hi('Tag',	        { 'fg': s:yellow, 'styles': [s:styles.underline] })
 call s:hi('Delimiter',	    { 'fg': s:pink })
 call s:hi('SpecialComment',	{ 'fg': s:salmon, 'styles': [s:styles.underline, 'italic'] })
-call s:hi('Debug',	        { 'fg': s:yellow })
+call s:hi('Debug',	        { 'fg': s:dark_yellow })
 
 
 call s:hi('Underlined',	    { 'fg': s:blue })
